@@ -1,7 +1,8 @@
-$.ajax({
-  type: "POST",
-  url: "~/othello_gui.py",
-  data: { param: text}
-}).done(function( o ) {
-   // do something
-});
+  const catElement = document.getElementById('cat');
+  if (catElement.complete && catElement.naturalHeight !== 0) {
+    catElement.style.display = '';
+  } else {
+    catElement.onload = () => {
+      catElement.style.display = '';
+    }
+  }
