@@ -16,7 +16,7 @@ from othello_shared import get_possible_moves, get_score
 
 class OthelloGui(object):
 
-    def __init__(self, game_manager, player1, player2):
+    def __init__(self, game_manager=OthelloGameManager(dimension=8), player1='ap3901_ai.py', player2='Human'):
 
         self.game = game_manager
         self.players = [None, player1, player2]
